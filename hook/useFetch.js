@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const useFetch = (endpoint, query) => {
     const [data, setData] = useState([]);
@@ -10,7 +11,7 @@ const useFetch = (endpoint, query) => {
         method: 'GET',
         url: `https://jsearch.p.rapidapi.com/${endpoint}`,
         headers: {
-          'X-RapidAPI-Key': '905780b24bmsh8a590587a40bd1dp19f955jsnca737cb3180d',
+          'X-RapidAPI-Key': 'ce360f9932msh5ff2216aba6d4e3p1d92acjsn3fc397d0d511',
           'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
         },
         params: { ...query },
@@ -21,7 +22,7 @@ const useFetch = (endpoint, query) => {
 
         try {
             const cacheKey = `${endpoint}_${JSON.stringify(query)}`;
-            const cachedData = localStorage.getItem(cacheKey);
+            const cachedData = await AsyncStorage.getItem(cacheKey);
 
             if (cachedData) {
                 setData(JSON.parse(cachedData));
@@ -29,7 +30,7 @@ const useFetch = (endpoint, query) => {
             } else {
                 const response = await axios.request(options);
                 setData(response.data.data);
-                localStorage.setItem(cacheKey, JSON.stringify(response.data.data));
+                await AsyncStorage.setItem(cacheKey, JSON.stringify(response.data.data));
                 setIsLoading(false);
             }
         } catch (error) {
