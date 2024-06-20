@@ -12,13 +12,13 @@
           "locationAlwaysAndWhenInUsePermission": "Allow Job Search App to use your location.",
           "locationWhenInUsePermission": "Allow Job Search App to use your location."
         }
-      ]
+      ],
+      "expo-font"
     ],
     "name": "Job_Search_App",
     "slug": "Job_Search_App",
     "ios": {
       "bundleIdentifier": "myApp"
     }
-
   }
 }
