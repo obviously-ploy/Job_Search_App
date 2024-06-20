@@ -28,7 +28,7 @@ const JobDetails = () => {
 
   const { data, isLoading, error, refetch } = useFetch("job-details", {
     job_id: params.id,
-  });
+  }, true);
 
   const [refreshing, setRefreshing] = useState(false);
   const [activeTab, setActiveTab] = useState(tabs[0]);
