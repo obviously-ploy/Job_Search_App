@@ -30,8 +30,8 @@ const Nearbyjobs = () => {
   useEffect(() => {
     if (searchData || searchError) {
       setShouldFetch(false); 
-      console.log("Search Data:", searchData);
-      console.log("Search Error:", searchError);
+      // console.log("Search Data:", searchData);
+      // console.log("Search Error:", searchError);
     }
   }, [searchData, searchError]);
 

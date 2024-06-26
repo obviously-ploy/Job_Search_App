@@ -9,6 +9,9 @@ import { ScreenHeaderBtn, NearbyJobCard } from '../../components';
 import { COLORS, icons, SIZES } from '../../constants';
 import styles from '../../styles/search';
 
+import useLocation from '../../hook/useLocation';
+
+
 const JobSearch = () => {
     const params = useLocalSearchParams();
     const router = useRouter();
@@ -18,15 +21,30 @@ const JobSearch = () => {
     const [searchError, setSearchError] = useState(null);
     const [page, setPage] = useState(1);
 
-    const CACHE_KEY = `search_${params.id}`;
+    const [query, setQuery] = useState(params.id);
+    const [shouldFetch, setShouldFetch] = useState(false);
+    const { location, address, isLocationLoading, locationError } = useLocation();
+
+    useEffect(() => {
+        if (address) {
+          const newQuery = `${params.id} in ${address.city}, ${address.isoCountryCode}`;
+          setQuery(newQuery);
+          setShouldFetch(true);  
+        }
+    }, [address]);
 
     const handleSearch = async () => {
+        if (!shouldFetch) return;
+
         setSearchLoader(true);
+        console.log("THE QUERY IN THE SEARCH FOLDER IS " + query)
+        const CACHE_KEY = `search_${query}`;
 
         try {
             const cachedData = await AsyncStorage.getItem(CACHE_KEY);
             if (cachedData) {
                 setSearchResult(JSON.parse(cachedData));
+                setShouldFetch(false);
             } else {
                 const options = {
                     method: 'GET',
@@ -36,7 +54,7 @@ const JobSearch = () => {
                         'X-RapidAPI-Host': 'jsearch.p.rapidapi.com',
                     },
                     params: {
-                        query: params.id,
+                        query: query,
                         page: page.toString(),
                     },
                 };
@@ -62,6 +80,13 @@ const JobSearch = () => {
             handleSearch();
         }
     };
+
+    useEffect(() => {
+        if (shouldFetch) {
+          handleSearch();
+        }
+      }, [shouldFetch]); 
+    
 
     useEffect(() => {
         handleSearch();

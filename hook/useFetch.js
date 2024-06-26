@@ -21,7 +21,7 @@ const useFetch = (endpoint, query, shouldFetch) => {
     if (!shouldFetch) return;
 
     setIsLoading(true);
-    console.log("Fetching data with options:", options);
+    // console.log("Fetching data with options:", options);
 
     try {
       const cacheKey = `${endpoint}_${JSON.stringify(query)}`;
