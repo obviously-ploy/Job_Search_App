@@ -12,6 +12,11 @@ import camera from "../assets/icons/camera.png";
 import email from "../assets/icons/email.png"
 import phone from "../assets/icons/phone.png"
 import user from "../assets/icons/user.png"
+import help from "../assets/icons/question.png"
+import logout from "../assets/icons/enter.png"
+import favorite from "../assets/icons/star.png"
+
+
 
 
 export default {
@@ -28,5 +33,8 @@ export default {
   camera, 
   email, 
   phone, 
-  user 
+  user,
+  help,
+  logout,
+  favorite
 };
