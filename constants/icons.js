@@ -9,7 +9,9 @@ import location from "../assets/icons/location.png";
 import chevronLeft from '../assets/icons/chevron-left.png'
 import chevronRight from '../assets/icons/chevron-right.png'
 import camera from "../assets/icons/camera.png";
-import mail from "../assets/icons/mail.png"
+import email from "../assets/icons/email.png"
+import phone from "../assets/icons/phone.png"
+
 
 export default {
   heart,
@@ -23,5 +25,6 @@ export default {
   chevronLeft,
   chevronRight,
   camera, 
-  mail
+  email, 
+  phone 
 };
