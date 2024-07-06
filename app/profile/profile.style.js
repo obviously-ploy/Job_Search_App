@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         marginTop: SIZES.large,
-        marginBottom: SIZES.small
+        marginBottom: SIZES.large
     },
 
     headerTitle: {

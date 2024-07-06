@@ -4,7 +4,8 @@ import { Stack, useRouter } from 'expo-router';
 import { COLORS, icons, images } from "../../constants";
 import { ScreenHeaderBtn } from '../../components';
 import styles from './profile.style';
-import ProfilePageInfo from '../../components/common/cards/profile/ProfilePageInfo'; // Ensure the path is correct
+import ProfilePageInfo from '../../components/common/cards/profile/ProfilePageInfo'; 
+import ProfilePageUtils from '../../components/common/cards/profile/ProfilePageUtils'; 
 
 const ProfilePage = () => {
     const router = useRouter();
@@ -59,11 +60,20 @@ const ProfilePage = () => {
                     info="123 Main St, Anytown, USA"
                 />
                 <View style={styles.header}>
-                    <Text style={styles.headerTitle}>Personal Information</Text>
-                    <TouchableOpacity>
-                        <Text style={styles.headerBtn}>Edit</Text>
-                    </TouchableOpacity>
+                    <Text style={styles.headerTitle}>Utilities</Text>
                 </View>
+                <ProfilePageUtils
+                    iconUrl={icons.favorite}
+                    info = "Favorite Jobs"
+                />
+                <ProfilePageUtils
+                    iconUrl={icons.help}
+                    info = "Help"
+                />
+                <ProfilePageUtils
+                    iconUrl={icons.logout}
+                    info = "Sign Out"
+                />
             </View>
 
         </SafeAreaView>

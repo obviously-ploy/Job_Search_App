@@ -1,7 +1,6 @@
-// profilepageinfo.js
 import React from 'react'
 import { View, Text, Image } from 'react-native'
-import styles from './profilepageinfo.style.js'
+import styles from './profilepage.style.js'
 
 const ProfilePageInfo = ({ iconUrl, info }) => {
     return(
