@@ -43,6 +43,10 @@ const ProfilePage = () => {
                     </TouchableOpacity>
                 </View>
                 <ProfilePageInfo
+                    iconUrl={icons.user}
+                    info="Carl Baseka"
+                />
+                <ProfilePageInfo
                     iconUrl={icons.email}
                     info="example@example.com"
                 />
@@ -54,7 +58,14 @@ const ProfilePage = () => {
                     iconUrl={icons.location}
                     info="123 Main St, Anytown, USA"
                 />
+                <View style={styles.header}>
+                    <Text style={styles.headerTitle}>Personal Information</Text>
+                    <TouchableOpacity>
+                        <Text style={styles.headerBtn}>Edit</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
+
         </SafeAreaView>
     );
 }
