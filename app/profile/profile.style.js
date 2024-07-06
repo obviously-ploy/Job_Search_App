@@ -3,6 +3,11 @@ import { StyleSheet } from "react-native";
 import { COLORS, FONT, SIZES, SHADOWS } from "../../constants";
 
 const styles = StyleSheet.create({
+    margins: {
+        marginHorizontal: SIZES.small,
+        borderWidth: 2,
+        borderColor: 'blue'
+    },
     container: {
         flex: 1,
     },
@@ -29,10 +34,11 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         position: 'absolute',
         bottom: 0,
-        right: 20,
+        right: -60,
         zIndex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        opacity: 0.9
     },
 
     cameraImage: {
@@ -71,39 +77,6 @@ const styles = StyleSheet.create({
         fontSize: SIZES.medium,
         fontFamily: FONT.medium,
         color: COLORS.gray,
-    },
-
-    margins: {
-        marginHorizontal: SIZES.small
-    },
-    fieldContainer: {
-        flex: 1,
-        justifyContent: "space-between",
-        alignItems: "center",
-        flexDirection: "row",
-        padding: SIZES.medium,
-        borderRadius: SIZES.small,
-        backgroundColor: COLORS.lightWhite,
-        shadowColor: "red",
-        ...SHADOWS.medium,
-    },
-    fieldWrapper: {
-        width: 50,
-        height: 100,
-        borderRadius: SIZES.medium,
-        justifyContent: "center",
-        alignItems: "center",
-        borderWidth: 2,
-        borderColor: 'red',
-    },
-    fieldText: {
-    fontFamily: FONT.regular,
-    paddingHorizontal: SIZES.medium,
-    color: "black",
-    },
-    fieldImage: {
-    width: 25,
-    height: 25,
     }
 })
 
