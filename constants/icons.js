@@ -11,6 +11,7 @@ import chevronRight from '../assets/icons/chevron-right.png'
 import camera from "../assets/icons/camera.png";
 import email from "../assets/icons/email.png"
 import phone from "../assets/icons/phone.png"
+import user from "../assets/icons/user.png"
 
 
 export default {
@@ -26,5 +27,6 @@ export default {
   chevronRight,
   camera, 
   email, 
-  phone 
+  phone, 
+  user 
 };
