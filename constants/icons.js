@@ -15,6 +15,7 @@ import user from "../assets/icons/user.png"
 import help from "../assets/icons/question.png"
 import logout from "../assets/icons/enter.png"
 import favorite from "../assets/icons/star.png"
+import padlock from  "../assets/icons/padlock.png"
 
 
 
@@ -36,5 +37,6 @@ export default {
   user,
   help,
   logout,
-  favorite
+  favorite, 
+  padlock
 };

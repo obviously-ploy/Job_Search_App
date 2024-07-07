@@ -69,10 +69,12 @@ const ProfilePage = () => {
                 <ProfilePageUtils
                     iconUrl={icons.help}
                     info = "Help"
+                    handlePress={() => {router.push("https://www.merriam-webster.com/dictionary/help")}}
                 />
                 <ProfilePageUtils
                     iconUrl={icons.logout}
                     info = "Sign Out"
+                    handlePress={() => {router.push("../login/Login")}}
                 />
             </View>
 
