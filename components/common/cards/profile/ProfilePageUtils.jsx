@@ -2,10 +2,10 @@ import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import styles from './profilepage.style.js'
 
-const ProfilePageInfo = ({ iconUrl, info }) => {
+const ProfilePageInfo = ({ iconUrl, info, handlePress }) => {
     return(
-        <TouchableOpacity>
-            <View style={styles.container}>
+        <TouchableOpacity onPress={handlePress}>
+            <View style={styles.container} onPress={handlePress}>
                 <Image source={iconUrl} style={styles.icon} />
                 <Text style={styles.infoText}>{info}</Text>
             </View>
