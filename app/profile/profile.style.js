@@ -5,8 +5,6 @@ import { COLORS, FONT, SIZES, SHADOWS } from "../../constants";
 const styles = StyleSheet.create({
     margins: {
         marginHorizontal: SIZES.small,
-        borderWidth: 2,
-        borderColor: 'blue'
     },
     container: {
         flex: 1,
