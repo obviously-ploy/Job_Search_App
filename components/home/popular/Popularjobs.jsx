@@ -1,8 +1,8 @@
 import { View, Text, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'expo-router';
-import useFetch from '../../../hook/useFetch';
-import useLocation from '../../../hook/useLocation';
+import useFetch from '../../../utils/useFetch';
+import useLocation from '../../../utils/useLocation';
 import styles from './popularjobs.style';
 import { COLORS, SIZES } from "../../../constants";
 import PopularJobCard from '../../common/cards/popular/PopularJobCard';
