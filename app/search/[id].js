@@ -9,7 +9,7 @@ import { ScreenHeaderBtn, NearbyJobCard } from '../../components';
 import { COLORS, icons, SIZES } from '../../constants';
 import styles from '../../styles/search';
 
-import useLocation from '../../hook/useLocation';
+import useLocation from '../../utils/useLocation';
 
 
 const JobSearch = () => {
