@@ -12,6 +12,8 @@ const LoginPageField = ({iconUrl, fieldName, isSecureText}) => {
                 style = {styles.fieldInput}
                 placeholder = {fieldName}
                 secureTextEntry = {isSecureText}
+                blurOnSubmit = {true}
+                autoCapitalize='none'
             />
         </View>
     )
