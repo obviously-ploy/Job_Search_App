@@ -4,10 +4,10 @@ import { Stack, useRouter } from 'expo-router';
 import { COLORS, icons, images } from "../../constants";
 import { ScreenHeaderBtn } from '../../components';
 import styles from './profile.style';
-import ProfilePageInfo from '../../components/common/cards/profile/ProfilePageInfo'; 
-import ProfilePageUtils from '../../components/common/cards/profile/ProfilePageUtils'; 
+import ProfileScreenInfo from '../../components/common/cards/profile/ProfileScreenInfo'; 
+import ProfileScreenUtils from '../../components/common/cards/profile/ProfileScreenUtils'; 
 
-const ProfilePage = () => {
+const ProfileScreen = () => {
     const router = useRouter();
 
     return (
@@ -43,35 +43,35 @@ const ProfilePage = () => {
                         <Text style={styles.headerBtn}>Edit</Text>
                     </TouchableOpacity>
                 </View>
-                <ProfilePageInfo
+                <ProfileScreenInfo
                     iconUrl={icons.user}
                     info="Carl Baseka"
                 />
-                <ProfilePageInfo
+                <ProfileScreenInfo
                     iconUrl={icons.email}
                     info="example@example.com"
                 />
-                <ProfilePageInfo
+                <ProfileScreenInfo
                     iconUrl={icons.phone}
                     info="(123) 456-7890"
                 />
-                <ProfilePageInfo
+                <ProfileScreenInfo
                     iconUrl={icons.location}
                     info="123 Main St, Anytown, USA"
                 />
                 <View style={styles.header}>
                     <Text style={styles.headerTitle}>Utilities</Text>
                 </View>
-                <ProfilePageUtils
+                <ProfileScreenUtils
                     iconUrl={icons.favorite}
                     info = "Favorite Jobs"
                 />
-                <ProfilePageUtils
+                <ProfileScreenUtils
                     iconUrl={icons.help}
                     info = "Help"
                     handlePress={() => {router.push("https://www.merriam-webster.com/dictionary/help")}}
                 />
-                <ProfilePageUtils
+                <ProfileScreenUtils
                     iconUrl={icons.logout}
                     info = "Sign Out"
                     handlePress={() => {router.push("../login/Login")}}
@@ -82,4 +82,4 @@ const ProfilePage = () => {
     );
 }
 
-export default ProfilePage;
+export default ProfileScreen;
