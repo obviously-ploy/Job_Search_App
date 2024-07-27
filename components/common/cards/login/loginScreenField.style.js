@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     height: 'auto',
     marginBottom: SIZES.medium,
     backgroundColor: COLORS.white,
+    borderRadius: SIZES.xSmall
   },
   fieldInput: {
     fontFamily: FONT.regular,

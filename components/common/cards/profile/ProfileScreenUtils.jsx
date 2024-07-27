@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 
-const ProfileScreenInfo = ({ iconUrl, info, handlePress }) => {
+const ProfileScreenUtils = ({ iconUrl, info, handlePress }) => {
     return(
         <TouchableOpacity onPress={handlePress}>
             <View style={styles.container} onPress={handlePress}>
@@ -12,4 +12,4 @@ const ProfileScreenInfo = ({ iconUrl, info, handlePress }) => {
     )
 }
 
-export default ProfileScreenInfo
+export default ProfileScreenUtils
