@@ -4,6 +4,7 @@ import styles from './login.style'
 import { COLORS, icons, images } from "../../constants";
 import LoginScreenField from '../../components/common/cards/login/LoginScreenField';
 import {Stack} from 'expo-router';
+import LoginScreenBtn from '../../components/common/cards/login/LoginScreenBtn';
 
 
 const LoginScreen = () => {
@@ -29,16 +30,16 @@ const LoginScreen = () => {
                     fieldName = {'Password'}
                     isSecureText = {true}
                 />
-                <TouchableOpacity>
-                    <View style={styles.buttonContainer}>
-                        <Text style={styles.buttonText}>Login</Text>
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                    <View style={styles.buttonContainer}>
-                        <Text style={styles.buttonText}>Sign Up</Text>
-                    </View>
-                </TouchableOpacity>
+                <LoginScreenBtn
+                    btnColour={COLORS.tertiary}
+                    handlePress={null}
+                    text={"Sign Up"}
+                />
+                <LoginScreenBtn
+                    btnColour={COLORS.primary}
+                    handlePress={null}
+                    text={"Sign In"}
+                />
             </View>
             
         </SafeAreaView>
