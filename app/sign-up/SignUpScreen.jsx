@@ -7,8 +7,6 @@ import SignUpScreenInfo from "../../components/common/cards/sign-up/SignUpScreen
 import LoginScreenBtn from '../../components/common/cards/login/LoginScreenBtn';
 
 const SignUpScreen = () => {
-    const router = useRouter();
-
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
             <Stack.Screen
