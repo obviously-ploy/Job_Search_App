@@ -2,11 +2,11 @@ import React from 'react'
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native'
 import styles from './login.style'
 import { COLORS, icons, images } from "../../constants";
-import LoginPageField from '../../components/common/cards/login/LoginPageField';
+import LoginScreenField from '../../components/common/cards/login/LoginScreenField';
 import {Stack} from 'expo-router';
 
 
-const LoginPage = () => {
+const LoginScreen = () => {
 
     return(
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -19,12 +19,12 @@ const LoginPage = () => {
                 }}
             />
             <View style={styles.container}>
-                <LoginPageField
+                <LoginScreenField
                     iconUrl = {icons.email}
                     fieldName = {'Email'}
                     isSecureText = {false}
                 />
-                <LoginPageField
+                <LoginScreenField
                     iconUrl = {icons.padlock}
                     fieldName = {'Password'}
                     isSecureText = {true}
@@ -34,10 +34,15 @@ const LoginPage = () => {
                         <Text style={styles.buttonText}>Login</Text>
                     </View>
                 </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.buttonContainer}>
+                        <Text style={styles.buttonText}>Sign Up</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
             
         </SafeAreaView>
     )
 }
 
-export default LoginPage
+export default LoginScreen

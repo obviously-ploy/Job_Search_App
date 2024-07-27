@@ -1,9 +1,9 @@
 
 import React from 'react'
 import { View, Image, TextInput, Text} from 'react-native'
-import styles from './loginpagefield.style'
+import styles from './loginScreenField.style'
 
-const LoginPageField = ({iconUrl, fieldName, isSecureText}) => {
+const LoginScreenField = ({iconUrl, fieldName, isSecureText}) => {
 
     return (
         <View style={styles.fieldContainer}>
@@ -19,4 +19,4 @@ const LoginPageField = ({iconUrl, fieldName, isSecureText}) => {
     )
 }
 
-export default LoginPageField
+export default LoginScreenField

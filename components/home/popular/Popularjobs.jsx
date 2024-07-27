@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'expo-router';
 import useFetch from '../../../utils/useFetch';
 import useLocation from '../../../utils/useLocation';
-import styles from './popularjobs.style';
+import styles from './popularJobs.style';
 import { COLORS, SIZES } from "../../../constants";
 import PopularJobCard from '../../common/cards/popular/PopularJobCard';
 

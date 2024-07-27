@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 import useLocation from '../../../utils/useLocation';
 import useFetch from '../../../utils/useFetch';
-import styles from './nearbyjobs.style';
+import styles from './nearbyJobs.style';
 import { COLORS } from "../../../constants";
 import NearbyJobCard from '../../common/cards/nearby/NearbyJobCard';
 
