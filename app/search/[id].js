@@ -19,7 +19,7 @@ const JobSearch = () => {
     const [searchResult, setSearchResult] = useState([]);
     const [searchLoader, setSearchLoader] = useState(false);
     const [searchError, setSearchError] = useState(null);
-    const [page, setPage] = useState(1);
+    const [page, setScreen] = useState(1);
 
     const [query, setQuery] = useState(params.id);
     const [shouldFetch, setShouldFetch] = useState(false);
@@ -73,10 +73,10 @@ const JobSearch = () => {
 
     const handlePagination = (direction) => {
         if (direction === 'left' && page > 1) {
-            setPage(page - 1);
+            setScreen(page - 1);
             handleSearch();
         } else if (direction === 'right') {
-            setPage(page + 1);
+            setScreen(page + 1);
             handleSearch();
         }
     };

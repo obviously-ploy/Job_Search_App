@@ -1,8 +1,8 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
-import styles from './profilepage.style.js'
+import styles from './profileScreen.style.js'
 
-const ProfilePageInfo = ({ iconUrl, info }) => {
+const ProfileScreenInfo = ({ iconUrl, info }) => {
     return(
         <View style={styles.container}>
             <Image source={iconUrl} style={styles.icon} />
@@ -11,4 +11,4 @@ const ProfilePageInfo = ({ iconUrl, info }) => {
     )
 }
 
-export default ProfilePageInfo
+export default ProfileScreenInfo
