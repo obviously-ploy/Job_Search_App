@@ -7,20 +7,7 @@ const styles = StyleSheet.create({
     height: '100%',
     marginHorizontal: SIZES.medium,
     paddingTop: SIZES.xLarge * 10,
-   },
-  //  buttonContainer: {
-  //   alignItems: 'center',
-  //   justifyContent: "center",
-  //   height:SIZES.small*2 + 20,
-  //   marginBottom: SIZES.medium,
-  //   backgroundColor: COLORS.tertiary,
-  //   borderRadius: SIZES.xSmall
-  // },
-  // buttonText: {
-  //   fontFamily: FONT.bold,
-  //   fontSize: SIZES.large,
-  //   color: COLORS.white,
-  // }
+   }
 })
 
 export default styles;
