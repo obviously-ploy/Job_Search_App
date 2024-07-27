@@ -3,11 +3,12 @@ import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native'
 import styles from './login.style'
 import { COLORS, icons, images } from "../../constants";
 import LoginScreenField from '../../components/common/cards/login/LoginScreenField';
-import {Stack} from 'expo-router';
+import {Stack, useRouter} from 'expo-router';
 import LoginScreenBtn from '../../components/common/cards/login/LoginScreenBtn';
 
 
 const LoginScreen = () => {
+    const router = useRouter();
 
     return(
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -33,12 +34,12 @@ const LoginScreen = () => {
                 <LoginScreenBtn
                     btnColour={COLORS.tertiary}
                     handlePress={null}
-                    text={"Sign Up"}
+                    text={"Sign In"}
                 />
                 <LoginScreenBtn
                     btnColour={COLORS.primary}
-                    handlePress={null}
-                    text={"Sign In"}
+                    handlePress={() => {router.push("../../sign-up/SignUpScreen")}}
+                    text={"Sign Up"}
                 />
             </View>
             
