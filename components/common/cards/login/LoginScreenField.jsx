@@ -3,7 +3,7 @@ import React from 'react'
 import { View, Image, TextInput, Text} from 'react-native'
 import styles from './loginScreenField.style'
 
-const LoginScreenField = ({iconUrl, fieldName, isSecureText}) => {
+const LoginScreenField = ({iconUrl, fieldName, isSecureText, error}) => {
 
     return (
         <View style={styles.fieldContainer}>
