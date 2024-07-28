@@ -16,7 +16,7 @@ import help from "../assets/icons/question.png"
 import logout from "../assets/icons/enter.png"
 import favorite from "../assets/icons/star.png"
 import padlock from  "../assets/icons/padlock.png"
-
+import warning from "../assets/icons/warning.png"
 
 
 
@@ -38,5 +38,6 @@ export default {
   help,
   logout,
   favorite, 
-  padlock
+  padlock,
+  warning
 };
