@@ -30,8 +30,6 @@ const useValidateSignUp = (fullName, email, phone, password, confirmPassword) =>
         errors.confirmPassword = 'Passwords must match';
     }
 
-    // console.log("ERRORS INSIDE OF VALIDATE: ")
-    // console.log(errors)
     return errors;
 };
 

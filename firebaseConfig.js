@@ -1,25 +1,31 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {initializeAuth, getReactNativePersistence } from 'firebase/auth';
+import { initializeFirestore} from "firebase/firestore";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDnaF-kQQKv4QSWwD5JCe1EUPMbMluLYLI",
-  authDomain: "job-search-app-ef5dd.firebaseapp.com",
-  projectId: "job-search-app-ef5dd",
-  storageBucket: "job-search-app-ef5dd.appspot.com",
-  messagingSenderId: "493550060745",
-  appId: "1:493550060745:web:28f39ddd2070a087e5b918",
-  measurementId: "G-VZ3V15TP6Y"
+
+  apiKey: "AIzaSyDj_iAwfVzybDKwqfQ9nzfBt7BuRQ-diao",
+
+  authDomain: "job-search-app-da300.firebaseapp.com",
+
+  projectId: "job-search-app-da300",
+
+  storageBucket: "job-search-app-da300.appspot.com",
+
+  messagingSenderId: "26327321029",
+
+  appId: "1:26327321029:web:f47f4019c5da6eed08e3ac",
+
+  measurementId: "G-H9C3YT97C2"
+
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(auth);
-const firestore = getFirestore(app);
-
-export default {app, auth, firestore}
+const auth = initializeAuth(app, {
+  persistence: getReactNativePersistence(AsyncStorage),
+});
+const db = initializeFirestore(app, {useFetchStreams: false});
+export { app, auth, db };
