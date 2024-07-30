@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     },
     fieldInput: {
         fontFamily: FONT.regular,
-        fontSize: SIZES.medium,
+        fontSize: SIZES.medium,  
         color: COLORS.gray,
         width: "100%",
         height: "100%",
