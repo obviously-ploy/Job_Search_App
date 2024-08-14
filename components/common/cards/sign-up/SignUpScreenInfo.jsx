@@ -3,7 +3,7 @@ import { View, TextInput, Image, Text } from 'react-native';
 import styles from './signUpScreenInfo.style.js';
 import icons from '../../../../constants/icons.js';
 
-const SignUpScreenInfo = ({ iconUrl, fieldName, isSecureText, onChangeText, errorText }) => {
+const SignUpScreenInfo = ({ iconUrl, fieldName, isSecureText, onChangeText, errorText, isError }) => {
     return (
         <View>
             <View style={errorText ? styles.errorFieldContainer : styles.fieldContainer}>
