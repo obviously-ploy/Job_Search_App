@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
+import styles from './profileScreen.style'
 
 const ProfileScreenUtils = ({ iconUrl, info, handlePress }) => {
     return(
