@@ -1,14 +1,24 @@
 import React from 'react';
-import { View, SafeAreaView, Text, ImageBackground, TouchableOpacity } from 'react-native';
+import { View, SafeAreaView, Text, ImageBackground, TouchableOpacity, Alert } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import { COLORS, icons, images } from "../../constants";
 import { ScreenHeaderBtn } from '../../components';
 import styles from './profile.style';
 import ProfileScreenInfo from '../../components/common/cards/profile/ProfileScreenInfo'; 
 import ProfileScreenUtils from '../../components/common/cards/profile/ProfileScreenUtils'; 
+import { signOut, getAuth } from 'firebase/auth';
 
 const ProfileScreen = () => {
     const router = useRouter();
+
+    const onSubmit = async () => {
+        const auth = getAuth();
+        signOut(auth).then(() => {
+            router.push("../login/LoginScreen");
+        }).catch((error) => {
+            Alert.alert("Error", error.message);
+        });
+    };
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -74,7 +84,7 @@ const ProfileScreen = () => {
                 <ProfileScreenUtils
                     iconUrl={icons.logout}
                     info = "Sign Out"
-                    handlePress={() => {router.push("../login/Login")}}
+                    handlePress={onSubmit}
                 />
             </View>
 
