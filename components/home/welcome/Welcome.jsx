@@ -5,12 +5,15 @@ import {
   TextInput,
   TouchableOpacity,
   Image,
-  FlatList
+  FlatList,
+  ActivityIndicator
 } from 'react-native'
 import { useRouter } from 'expo-router'
 
 import styles from './welcome.style'
-import {icons, SIZES} from "../../../constants"
+import {icons, SIZES, COLORS} from "../../../constants"
+
+import useFetchUserData from '../../../utils/useFetchUserData'
 
 const jobTypes = ['Full-Time', 'Part-Time', 'Contractor']
 
@@ -18,10 +21,30 @@ const Welcome = ({searchTerm, setSearchTerm, handleClick}) => {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState('Full-Time')
 
+  const {userData, error, isLoading} = useFetchUserData()
+  
+  if (isLoading) {
+    return (
+      <View style={styles.container}>
+        <ActivityIndicator size="large" color={COLORS.primary} />
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View style={styles.container}>
+        <Text>Error fetching user data: {error.message}</Text>
+      </View>
+    );
+  }
+  
+  const user = userData && userData[0]
+  
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello Carl</Text>
+        <Text style={styles.userName}>Hello {user ? user.fullName : "User"}</Text>
         <Text style={styles.welcomeMessage}>Find your perfect job</Text>
       </View>
 
