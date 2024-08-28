@@ -17,6 +17,8 @@ import logout from "../assets/icons/enter.png"
 import favorite from "../assets/icons/star.png"
 import padlock from  "../assets/icons/padlock.png"
 import warning from "../assets/icons/warning.png"
+import name from "../assets/icons/name.png"
+import docs from "../assets/icons/docs.png"
 
 
 
@@ -39,5 +41,7 @@ export default {
   logout,
   favorite, 
   padlock,
-  warning
+  warning,
+  name,
+  docs
 };
