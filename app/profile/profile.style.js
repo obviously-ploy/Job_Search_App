@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    pictureImage:{
+    pictureContainer: {
         width: 150,
         height: 150,
         borderRadius: 100,
@@ -23,6 +23,11 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
         borderWidth: 5,
         borderColor: COLORS.gray2,
+    },
+    pictureImage:{
+        width: 172,
+        height: 172,
+        position: "relative"
     },
 
     cameraCircle: {

@@ -20,7 +20,7 @@ const HomeScreen = () =>{
                 ),
                 headerRight: () =>(
                     <ScreenHeaderBtn 
-                        iconUrl={images.profile} dimension="75%"
+                        iconUrl={images.profile} dimension="100%"
                         handlePress={ () => {
                             router.push('../profile/ProfileScreen')
                         }}

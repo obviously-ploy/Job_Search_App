@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, Text, ImageBackground, TouchableOpacity, Alert } from 'react-native';
+import { View, SafeAreaView, Text, ImageBackground, TouchableOpacity, Alert, ActivityIndicator } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import { COLORS, icons, images } from "../../constants";
 import { ScreenHeaderBtn } from '../../components';
@@ -7,6 +7,7 @@ import styles from './profile.style';
 import ProfileScreenInfo from '../../components/common/cards/profile/ProfileScreenInfo'; 
 import ProfileScreenUtils from '../../components/common/cards/profile/ProfileScreenUtils'; 
 import { signOut, getAuth } from 'firebase/auth';
+import useFetchUserData from '../../utils/useFetchUserData';
 
 const ProfileScreen = () => {
     const router = useRouter();
@@ -19,6 +20,26 @@ const ProfileScreen = () => {
             Alert.alert("Error", error.message);
         });
     };
+
+    const {userData, error, isLoading} = useFetchUserData()
+  
+  if (isLoading) {
+    return (
+      <View style={styles.container}>
+        <ActivityIndicator size="large" color={COLORS.primary} />
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View style={styles.container}>
+        <Text>Error fetching user data: {error.message}</Text>
+      </View>
+    );
+  }
+  
+  const user = userData && userData[0]
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -38,13 +59,15 @@ const ProfileScreen = () => {
             />
             <View style={styles.margins}>
                 <View style={styles.imageContainer}>
-                    <ImageBackground source={images.profile} resizeMode="cover" style={styles.pictureImage} />
+                    <View style={styles.pictureContainer}>
+                        <ImageBackground source={images.profile} resizeMode="cover" style={styles.pictureImage}/>
+                    </View>
                     <TouchableOpacity>
                         <View style={styles.cameraCircle}>
                             <ImageBackground source={icons.camera} resizeMode="cover" style={styles.cameraImage} />
                         </View>
                     </TouchableOpacity>
-                    <Text style={styles.nameStyle}>Carl Baseka</Text>
+                    <Text style={styles.nameStyle}>{user ? user.fullName : 'Full Name'}</Text>
                     <Text style={styles.activeStyle}>Active Since - Dec, 2013</Text>
                 </View>
                 <View style={styles.header}>
@@ -54,21 +77,23 @@ const ProfileScreen = () => {
                     </TouchableOpacity>
                 </View>
                 <ProfileScreenInfo
-                    iconUrl={icons.user}
-                    info="Carl Baseka"
+                    iconUrl={icons.name}
+                    info={user ? user.fullName : 'Full Name'}
                 />
                 <ProfileScreenInfo
                     iconUrl={icons.email}
-                    info="example@example.com"
+                    info={user ? user.email :  "Email"}
                 />
                 <ProfileScreenInfo
                     iconUrl={icons.phone}
-                    info="(123) 456-7890"
+                    info={user ? user.phone : "Phone Number"}
                 />
-                <ProfileScreenInfo
-                    iconUrl={icons.location}
-                    info="123 Main St, Anytown, USA"
-                />
+                <TouchableOpacity>
+                    <ProfileScreenInfo
+                        iconUrl={icons.docs}
+                        info="Resume"
+                    />
+                </TouchableOpacity>
                 <View style={styles.header}>
                     <Text style={styles.headerTitle}>Utilities</Text>
                 </View>
