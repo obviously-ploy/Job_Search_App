@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import RAPID_API_KEY from "../env"
+import 'dotenv/config';
 
 const useFetchJobs = (endpoint, query, shouldFetch) => {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ const useFetchJobs = (endpoint, query, shouldFetch) => {
     method: 'GET',
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     headers: {
-      'X-RapidAPI-Key': RAPID_API_KEY,
+      'X-RapidAPI-Key': process.env.RAPID_API_KEY,
       'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
     },
     params: { ...query },
