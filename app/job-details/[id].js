@@ -18,7 +18,7 @@ import {
   Specifics,
 } from "../../components";
 import { COLORS, icons, SIZES } from "../../constants";
-import useFetch from "../../utils/useFetch";
+import useFetchJobs from "../../utils/useFetchJobs";
 
 const tabs = ["About", "Qualifications", "Responsibilities"];
 
@@ -26,7 +26,7 @@ const JobDetails = () => {
   const params = useLocalSearchParams();
   const router = useRouter();
 
-  const { data, isLoading, error, refetch } = useFetch("job-details", {
+  const { data, isLoading, error, refetch } = useFetchJobs("job-details", {
     job_id: params.id,
   }, true);
 
