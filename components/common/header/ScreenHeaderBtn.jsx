@@ -1,7 +1,7 @@
 import React from 'react'
 import { TouchableOpacity, Image } from 'react-native'
 
-import styles from './screenHeader.style'
+import styles from "./screenheader.style.js"
 
 const ScreenHeaderBtn = ({iconUrl, dimension, handlePress}) => {
   return (
