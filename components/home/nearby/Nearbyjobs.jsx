@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 import useLocation from '../../../utils/useLocation';
-import useFetch from '../../../utils/useFetch';
+import useFetchJobs from '../../../utils/useFetchJobs';
 import styles from './nearbyJobs.style';
 import { COLORS } from "../../../constants";
 import NearbyJobCard from '../../common/cards/nearby/NearbyJobCard';
@@ -14,7 +14,7 @@ const Nearbyjobs = () => {
   const [shouldFetch, setShouldFetch] = useState(false);
   const { location, address, isLocationLoading, locationError } = useLocation();
 
-  const { data: searchData, isLoading: isSearchLoading, error: searchError, refetch } = useFetch('search', {
+  const { data: searchData, isLoading: isSearchLoading, error: searchError, refetch } = useFetchJobs('search', {
     query: query,
     num_pages: 1
   }, shouldFetch);
