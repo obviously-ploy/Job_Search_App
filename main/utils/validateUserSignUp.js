@@ -1,4 +1,4 @@
-const useValidateSignUp = (fullName, email, phone, password, confirmPassword) => {
+const validateUserSignUp = (fullName, email, phone, password, confirmPassword) => {
     const errors = {};
     const fullNamePattern = /^[a-zA-Z- ]+$/; 
 
@@ -33,4 +33,4 @@ const useValidateSignUp = (fullName, email, phone, password, confirmPassword) =>
     return errors;
 };
 
-export default useValidateSignUp
+export default validateUserSignUp

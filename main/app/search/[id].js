@@ -9,7 +9,7 @@ import { ScreenHeaderBtn, NearbyJobCard } from '../../components';
 import { COLORS, icons, SIZES } from '../../constants';
 import styles from '../../styles/search';
 
-import useLocation from '../../utils/useLocation';
+import fetchUserLocation from '../../utils/fetchUserLocation';
 
 
 const JobSearch = () => {
@@ -23,7 +23,7 @@ const JobSearch = () => {
 
     const [query, setQuery] = useState(params.id);
     const [shouldFetch, setShouldFetch] = useState(false);
-    const { location, address, isLocationLoading, locationError } = useLocation();
+    const { location, address, isLocationLoading, locationError } = fetchUserLocation();
 
     useEffect(() => {
         if (address) {

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Config from "react-native-config";
 
-const useFetchJobs = (endpoint, query, shouldFetch) => {
+const fetchJobs = (endpoint, query, shouldFetch) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -56,4 +56,4 @@ const useFetchJobs = (endpoint, query, shouldFetch) => {
   return { data, isLoading, error, refetch };
 };
 
-export default useFetchJobs;
+export default fetchJobs;

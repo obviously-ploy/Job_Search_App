@@ -13,7 +13,7 @@ import { useRouter } from 'expo-router'
 import styles from './welcome.style'
 import {icons, SIZES, COLORS} from "../../../constants"
 
-import useFetchUserData from '../../../utils/useFetchUserData'
+import fetchUserData from '../../../utils/fetchUserData'
 
 const jobTypes = ['Full-Time', 'Part-Time', 'Contractor']
 
@@ -21,7 +21,7 @@ const Welcome = ({searchTerm, setSearchTerm, handleClick}) => {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState('Full-Time')
 
-  const {userData, error, isLoading} = useFetchUserData()
+  const {userData, error, isLoading} = fetchUserData()
   
   if (isLoading) {
     return (

@@ -18,7 +18,7 @@ import {
   Specifics,
 } from "../../components";
 import { COLORS, icons, SIZES } from "../../constants";
-import useFetchJobs from "../../utils/useFetchJobs";
+import fetchJobs from "../../utils/fetchJobs";
 
 const tabs = ["About", "Qualifications", "Responsibilities"];
 
@@ -26,9 +26,11 @@ const JobDetails = () => {
   const params = useLocalSearchParams();
   const router = useRouter();
 
-  const { data, isLoading, error, refetch } = useFetchJobs("job-details", {
+  const { data, isLoading, error, refetch } = fetchJobs("job-details", {
     job_id: params.id,
   }, true);
+
+  console.log("Job Visited: " + JSON.stringify(data, undefined, 4))
 
   const [refreshing, setRefreshing] = useState(false);
   const [activeTab, setActiveTab] = useState(tabs[0]);

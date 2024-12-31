@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { auth, db } from "../firebaseConfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
-const useFetchUserData = () => {
+const fetchUserData = () => {
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
@@ -33,4 +33,4 @@ const useFetchUserData = () => {
   return { userData, error, isLoading };
 };
 
-export default useFetchUserData;
+export default fetchUserData;

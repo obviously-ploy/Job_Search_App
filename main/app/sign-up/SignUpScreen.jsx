@@ -5,7 +5,7 @@ import { COLORS, icons } from "../../constants";
 import styles from './signUpScreen.style';
 import SignUpScreenInfo from "../../components/common/cards/sign-up/SignUpScreenInfo";
 import LoginScreenBtn from '../../components/common/cards/login/LoginScreenBtn';
-import useHandleSignUp from '../../utils/useHandleSignUp';
+import handleUserSignUp from '../../utils/handleUserSignUp';
 
 const SignUpScreen = () => {
   const [fullName, setFullName] = useState('');
@@ -14,7 +14,7 @@ const SignUpScreen = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const { handleSignUp, validationErrors, userCreationError, isLoading } = useHandleSignUp();
+  const { handleSignUp, validationErrors, userCreationError, isLoading } = handleUserSignUp();
 
   const onSubmit = () => {
     handleSignUp(fullName, email, phone, password, confirmPassword);

@@ -1,8 +1,8 @@
 import { View, Text, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'expo-router';
-import useFetchJobs from '../../../utils/useFetchJobs';
-import useLocation from '../../../utils/useLocation';
+import fetchJobs from '../../../utils/fetchJobs';
+import fetchUserLocation from '../../../utils/fetchUserLocation';
 import styles from './popularjobs.style.js';
 import { COLORS, SIZES } from "../../../constants";
 import PopularJobCard from '../../common/cards/popular/PopularJobCard';
@@ -12,10 +12,10 @@ const Popularjobs = () => {
 
   const [query, setQuery] = useState('React Developer');
   const [shouldFetch, setShouldFetch] = useState(false);
-  const { location, address, isLocationLoading, locationError } = useLocation();
+  const { location, address, isLocationLoading, locationError } = fetchUserLocation();
 
 
-  const { data: searchData, isLoading: isSearchLoading, error: searchError, refetch } = useFetchJobs('search', {
+  const { data: searchData, isLoading: isSearchLoading, error: searchError, refetch } = fetchJobs('search', {
     query: query,
     num_pages: 1
   }, shouldFetch);

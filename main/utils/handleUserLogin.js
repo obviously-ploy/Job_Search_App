@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { auth} from "../firebaseConfig";
-import useValidateLogin from "./useValidateLogin";
+import validateUserLogin from "./validateUserLogin";
 import { signInWithEmailAndPassword} from 'firebase/auth';
 import { useRouter } from 'expo-router';
 
-const useHandleLogin = () => {
+const handleUserLogin = () => {
   const [inputErrors, setInputErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [loginError, setLoginError] = useState('');
   const router = useRouter();
 
   const handleLogin = async (email, password) => {
-    const errors = useValidateLogin(email, password);
+    const errors = validateUserLogin(email, password);
     setInputErrors(errors);
 
     if (Object.keys(errors).length === 0) {
@@ -30,4 +30,4 @@ const useHandleLogin = () => {
   return { handleLogin, inputErrors, loginError, isLoading };
 };
 
-export default useHandleLogin;
+export default handleUserLogin;

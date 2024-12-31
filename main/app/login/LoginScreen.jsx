@@ -5,14 +5,14 @@ import styles from './login.style';
 import { COLORS, icons } from "../../constants";
 import LoginScreenBtn from '../../components/common/cards/login/LoginScreenBtn';
 import SignUpScreenInfo from '../../components/common/cards/sign-up/SignUpScreenInfo';
-import useHandleLogin from '../../utils/useHandleLogin';
+import handleUserLogin from '../../utils/handleUserLogin';
 
 const LoginScreen = () => {
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const { handleLogin, inputErrors, loginError, isLoading } = useHandleLogin();
+  const { handleLogin, inputErrors, loginError, isLoading } = handleUserLogin();
 
   const onSubmit = () => {
     handleLogin(email, password);

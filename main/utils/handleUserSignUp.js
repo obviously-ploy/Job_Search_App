@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { Alert } from 'react-native';
 import { auth, db } from "../firebaseConfig";
-import useValidateSignUp from "./useValidateSignUp";
+import validateUserSignUp from "./validateUserSignUp";
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { addDoc, collection } from 'firebase/firestore';
 import { useRouter } from 'expo-router';
 
-const useHandleSignUp = () => {
+const handleUserSignUp = () => {
   const [validationErrors, setValidationErrors] = useState({});
   const [userCreationError, setUserCreationError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const handleSignUp = async (fullName, email, phone, password, confirmPassword) => {
-    const errors = useValidateSignUp(fullName, email, phone, password, confirmPassword);
+    const errors = validateUserSignUp(fullName, email, phone, password, confirmPassword);
     setValidationErrors(errors);
 
     if (Object.keys(errors).length === 0) {
@@ -40,4 +40,4 @@ const useHandleSignUp = () => {
   return { handleSignUp, validationErrors, userCreationError, isLoading };
 };
 
-export default useHandleSignUp;
+export default handleUserSignUp;

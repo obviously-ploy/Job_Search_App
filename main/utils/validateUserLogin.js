@@ -1,4 +1,4 @@
-const useValidateLogin = (email, password) => {
+const validateUserLogin = (email, password) => {
     const errors = {};
     
     if (!email) {
@@ -11,4 +11,4 @@ const useValidateLogin = (email, password) => {
     return errors
 };
 
-export default useValidateLogin
+export default validateUserLogin

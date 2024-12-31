@@ -7,7 +7,7 @@ import styles from './profile.style';
 import ProfileScreenInfo from '../../components/common/cards/profile/ProfileScreenInfo'; 
 import ProfileScreenUtils from '../../components/common/cards/profile/ProfileScreenUtils'; 
 import { signOut, getAuth } from 'firebase/auth';
-import useFetchUserData from '../../utils/useFetchUserData';
+import fetchUserData from '../../utils/fetchUserData';
 
 const ProfileScreen = () => {
     const router = useRouter();
@@ -21,7 +21,7 @@ const ProfileScreen = () => {
         });
     };
 
-    const {userData, error, isLoading} = useFetchUserData()
+    const {userData, error, isLoading} = fetchUserData()
   
   if (isLoading) {
     return (
