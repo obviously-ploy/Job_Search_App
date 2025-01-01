@@ -3,7 +3,7 @@ import { Alert } from 'react-native';
 import { auth, db } from "../firebaseConfig";
 import validateUserSignUp from "./validateUserSignUp";
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { addDoc, collection } from 'firebase/firestore';
+import { addDoc, collection, getCountFromServer } from 'firebase/firestore';
 import { useRouter } from 'expo-router';
 
 const handleUserSignUp = () => {
@@ -21,10 +21,14 @@ const handleUserSignUp = () => {
       try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
-        const docref = await addDoc(collection(db, "users"), {
+        const coll = collection(db, "users")
+        const snapshot = await getCountFromServer(coll)
+        const userId = snapshot.data().count + 1
+        const docref = await addDoc(coll, {
             fullName,
             email,
-            phone
+            phone,
+            userId
         });
         Alert.alert('Success', 'Account created successfully');
         router.push("../../login/LoginScreen")
