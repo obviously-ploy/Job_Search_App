@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Config from "react-native-config";
+import {RAPID_API_KEY} from '@env'
 
 const fetchJobs = (endpoint, query, shouldFetch) => {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ const fetchJobs = (endpoint, query, shouldFetch) => {
     method: 'GET',
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     headers: {
-      'X-RapidAPI-Key': Config.RAPID_API_KEY,
+      'X-RapidAPI-Key': RAPID_API_KEY,
       'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
     },
     params: { ...query },
@@ -36,6 +36,7 @@ const fetchJobs = (endpoint, query, shouldFetch) => {
         setData(response.data.data);
         await AsyncStorage.setItem(cacheKey, JSON.stringify(response.data.data));
       }
+      
     } catch (error) {
       setError(error);
     } finally {

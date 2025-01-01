@@ -10,6 +10,8 @@ import { COLORS, icons, SIZES } from '../../constants';
 import styles from '../../styles/search';
 
 import fetchUserLocation from '../../utils/fetchUserLocation';
+import {RAPID_API_KEY} from '@env'
+
 
 
 const JobSearch = () => {
@@ -50,7 +52,7 @@ const JobSearch = () => {
                     method: 'GET',
                     url: 'https://jsearch.p.rapidapi.com/search',
                     headers: {
-                        ,
+                        'X-RapidAPI-Key': RAPID_API_KEY,
                         'X-RapidAPI-Host': 'jsearch.p.rapidapi.com',
                     },
                     params: {
