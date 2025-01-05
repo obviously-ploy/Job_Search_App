@@ -1,20 +1,25 @@
 import numpy as np
 
+def cosine_similarity(viewed_jobs_matrix, fetched_jobs_matrix):
+    # Debugging: Check matrix shapes
+    print(f"Shape of viewed_jobs_matrix: {viewed_jobs_matrix.shape}")
+    print(f"Shape of fetched_jobs_matrix: {fetched_jobs_matrix.shape}")
 
-def cosine_similarity(viewed_jobs, fetched_jobs):
-    # # Example matrices (TF-IDF vectors)
-    # M = np.random.rand(100, 300)  # 100 viewed jobs, 300 features each
-    # N = np.random.rand(10, 300)   # 10 potential jobs, 300 features each
+    # Debugging: Check if matrices contain non-zero elements
+    if viewed_jobs_matrix.sum() == 0 or fetched_jobs_matrix.sum() == 0:
+        raise ValueError("One of the matrices is empty or contains only zeros.")
 
-    dot_product = np.dot(fetched_jobs, viewed_jobs.T)
+    # Compute dot product
+    dot_product = np.dot(fetched_jobs_matrix, viewed_jobs_matrix.T)
 
-    N_norms = np.linalg.norm(fetched_jobs, axis=1)[:, None]  
-    M_norms = np.linalg.norm(viewed_jobs, axis=1)          
+    # Compute norms and ensure they are not zero
+    N_norms = np.linalg.norm(fetched_jobs_matrix, axis=1)[:, None]
+    M_norms = np.linalg.norm(viewed_jobs_matrix, axis=1)
+    
+    if np.any(N_norms == 0) or np.any(M_norms == 0):
+        raise ValueError("One of the rows in the matrices has a zero norm, leading to invalid similarity calculations.")
 
-    cosine_similarities = dot_product / (N_norms * M_norms)  
+    # Calculate cosine similarities
+    cosine_similarities = dot_product / (N_norms * M_norms)
 
-    # Each row in `cosine_similarities` corresponds to a potential job
-    # Each column in `cosine_similarities` corresponds to a viewed job
-
-
-
+    return cosine_similarities

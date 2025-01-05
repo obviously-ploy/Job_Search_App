@@ -1,0 +1,434 @@
+Position: Software Developer (New Grad): Angular/React C#/Java
+Location:
+
+Ottawa, Canada In fast changing markets, customers worldwide rely on Thales. Thales is a business where brilliant people from all over the world come together to share ideas and inspire each other. In aerospace, transportation, defence, security and space, our architects design innovative solutions that make our tomorrow's possible.
+
+For decades, Ottawa has been a global technology leader. Today, Canada’s capital holds one of the brightest and most diverse technological ecosystems in North America. Voted as Canada’s best place to live 2017 by Maclean's, Ottawa offers a low cost of living with a high quality of life. The Thales Ottawa office has been a major supplier and long-term trusted partner to DND, enabling the Canadian Armed Forces and the Canadian Coast Guard to achieve mission success.
+
+Software Developer (New Grad):
+Angular/React C#/Java Position Summary Ottawa, Ontario (Hybrid)
+The successful candidate will implement, integrate, test, configure, and document full stack web-based software applications, and will be involved in selection, design, and experimentation activities related to such software in support of Innovation Team projects that contribute to naval platform in-service support programs. The successful candidate will help deliver value to the operational team quickly in an agile, incremental way and will work with business analysts and operational stakeholders to identify problems and find relevant solutions.
+
+The type of solutions could range from automating business processes, building a custom user interface that will make decision-making easier, connecting multiple software systems together, etc. The successful candidate will make use of modern software development techniques and technologies such as artificial intelligence and data analytics where warranted.
+
+Key Areas of Responsibility Participate in user needs / requirements analysis and software design;
+
+Experiment with new software stacks for proof of concept / pilot projects;
+
+Implement web applications software, including coding, unit testing, and integration;
+
+Produce software developer documentation;
+
+Apply Infrastructure as Code for quick and repeatable software deployment;
+
+Identify and analyze software defects and implement fixes into product releases; and
+
+Minimum Qualifications Bachelor’s degree in software engineering, computer engineering, computer science, or equivalent education with relevant experience
+
+Experience/expertise:
+
+Front-end web app software development frameworks
+
+Back-end web app software development using a managed programming language (e.g. C#, Java) and an associated framework (e.g. Node.
+
+JS, Spring, .NET Core)
+Web app software development using a scripting language (e.g. JavaScript/TypeScript, Python, Ruby) and an associated framework (e.g. Express.js, Django, Ruby on Rails)
+
+Preferred Qualifications Very strong coding, unit testing, and debugging skills
+
+Experience working in a scrum/agile software development environment
+
+Experience utilizing Infrastructure as Code patterns and technologies (such as Ansible, Puppet, Chef, Terraform, and AWS Cloud Formation)
+
+Experience with SQL’ API creation and/or management, containerization, e.g. Docker, Kubernetes use of machine learning libraries such as Tensor Flow and PyTorch, use of data analysis libraries such as Scikit-learn, Pandas, Num Py, and Matplotlib
+
+Experience with military (ideally Navy)
+What We Offer Thales provides an extensive benefits program for all full-time employees working 24 or more hours per week and their eligible dependents, including the following:
+
+Company paid Extended Health, Dental, HSA, Life, AD&D, Short-term Disability, Cancer Care Program, travel insurance, Employee Assistance Plan and Well-Being program.
+
+Retirement Savings Plans (RRSP, DCPP, TFSA) with a company contribution and a match to a DCPP, with no vesting period.
+
+Company paid holidays, vacation days, and paid sick leave.
+
+Voluntary Life, AD&D, Critical Illness, Long-Term Disability.
+
+Employee Discounts on home, auto, and gym membership.
+
+Why Join Us?
+
+Say HI and learn more about working at Thales .()#hybrid#LI-TA1
+
+Thales is an equal opportunity employer which values diversity and inclusivity in the workplace. Thales is committed to providing accommodations in all parts of the interview process. Applicants selected for an interview who require accommodation are asked to advise accordingly upon the invitation for an interview. We will work with you to meet your needs. All accommodation information provided will be treated as confidential and used only for the purpose of providing an accessible candidate experience.
+
+This position requires direct or indirect access to hardware, software or technical information controlled under the Canadian Export Control List, the Canadian Controlled Goods Program, the Canadian Industrial Security Program, the US International Traffic in Arms Regulations (ITAR) and/or the US Export Administration Regulations (EAR). All applicants must be eligible or able to obtain…|Company Description
+
+Rewind is a service that protects the critical data that powers businesses of all sizes. Our focus is on backing up data that lives in the cloud - in apps like Jira, GitHub, Confluence and Shopify. We are backed by Insight Partners, Inovia, Bessemer and Atlassian Ventures and are proud to be recognized as one of Canada's 50 fastest growing technology companies (2023 Deloitte Fast 50). We invite you to read our startup story to learn where we came from and where we’re going.
+
+Read about our mission, story and values here.
+
+To find out more about our perks, click here.
+
+Some of our Blogs might help you get a better understanding of what we do here. You can find them all here.
+
+Thriving at Rewind:
+
+We embrace the fast-paced, ever-changing nature of startup life. If you love working with speed, agility, and creativity, you’ll feel right at home here. Here's what it takes to succeed with us:
+• Team-First Mentality: We put teamwork at the core of everything we do, believing that we are better when we are together. Success is shared, and when the team wins, we all win.
+• Performance-Driven Mindset: We are proactive, goal-oriented, and focused on delivering tangible, high-quality results. We go beyond meeting expectations - we aim to exceed them.
+• Flexible Work-Life Approach: We encourage balance and understand the need to recharge. While we stay agile for urgent needs, we make sure there's time to recover and enjoy life.
+• Customer Centricity: Our commitment to customers shapes everything we do. We listen, build relationships, and innovate - from our dedicated customer support team to our engineers, everyone at our company is focused on solving problems that matter most to our users.
+• Taking Initiative: We value ownership and proactive problem-solving. We encourage team members to think creatively, take ownership, and lead improvements. Your ideas and actions drive our success.
+• We Make Time for Fun: We work hard and make time to enjoy the journey. It’s not just about hitting milestones—it’s about making the experience rewarding along the way.
+
+Job Description
+
+The development team at Rewind is made up of teams of 4-7 people; these people work together, collaboratively, to build new features and functions for our amazing customers.
+
+In broad terms, each member of the team is responsible for the following:
+• Collaborating with other members of the development team to derive the best possible design to meet requirements
+• Implementing, testing, documenting, and maintaining back-end systems for multiple high-traffic services
+• Maintaining and enhancing the front-end UI/UX for our application
+• Providing constructive feedback in the form of code and design reviews
+• Looking for ways to improve our development and deployment processes
+• Ensuring security and performance of our products
+
+Day to day, you will work in a scrum team to bring new features to our growing list of services. We are on a mission to backup the cloud, so developing reliable, securable, scalable and supportable code is a must. You will help put out some fires, especially the ones you accidentally created (we value accountability), including incident response and remediation, but your main focus will be the reliability and robustness in all the things you help build. Less-flammable apps; fewer smouldering embers; automated fire suppression.
+
+This job isn’t about moving mountains. Yes, we want to be proud of running top-flight, healthy products, but we also want to be kind, considerate, fair, flexible and calm (especially in a crisis).
+
+Key Responsibilities:
+• You will be part of our development team responsible for backing up over billions of items for over 20,000 businesses.
+• Your role will be huge; you will make decisions and write code that will help steer the business.
+• You will be enhancing existing platform integrations, as well as adding new functionality across all of our platforms.
+• You will be responsible for ensuring the quality of each production update, including finding ways to improve and optimize overall platform performance.
+• Ideal candidates will share our passion for simplicity, and help further improve the usability of the application together with other team members.
+• You will be participating in the R&D on call rotation on a regular basis.
+
+Qualifications
+
+We are looking for candidates with 1-2 years of experience as a Software Developer. You must have some working experience with Ruby on Rails, along with other common libraries such as RSpec.
+
+You should also:
+• Have experience with React (or other well-known framework) for building interactive user interfaces
+• Know your way around Linux and feel comfortable working from a terminal.
+• Know what "our code lives in git" means.
+• Have working experience with REST APIs and the ability to expertly navigate developer API documents.
+• Be comfortable wandering around a database, e.g., PostgreSQL.
+• Have working experience with GraphQL (an asset).
+• Have Typescript/Javascript experience (an asset).
+• Have a general understanding of cloud-based offerings (cloud experience such as AWS, GCP, or Azure is a definite asset).
+• Be self-motivated and possess strong organizational and time-management skills.
+• Have a problem-crushing attitude.
+• Be able to successfully manage multiple projects simultaneously and handle a fast-paced work environment, new challenges, and changing priorities.
+• Understand the importance of this quote - "Customer service is an attitude, not a department".
+
+Additional Information
+
+Where You’ll Work
+
+Our organization follows a hybrid work structure where employees work from the office three days/week. This role will be based out of our Ottawa office.
+
+How Rewind Will Support You
+
+We know that enjoying the journey is just as important as reaching our goals. We work hard to create a positive, inclusive environment where fun and laughter are part of our everyday routine. We also offer a variety of benefits to support your success both at work and in your personal life which includes but is not limited to:
+• Flexible work hours
+• Employee stock options
+• Health benefits
+• 3 weeks vacation
+• 7 life leave days
+• 2 Level Up days for professional development
+• 1 volunteer day
+• Summer hours (off every other Friday from June - September) and office closed during the holiday break in December
+• 4 week sabbatical after 4 years with us
+• Paid parental leave
+• $5000/year professional development allowance (you can take courses, buy books, attend conferences, cover certifications, etc)
+• $1000/year wellness/home office allowance
+
+Rewind is committed to building an inclusive, supportive place for you to do the best and most rewarding work of your career. We value how each new hire is an opportunity for us to bring in a different perspective, and we are always eager to further diversify our company. We strongly encourage candidates of all different backgrounds and identities to apply.|Company Description
+
+SA Technologies Inc. (www.satincorp.com) is a market leader and one of the fastest growing IT consulting firms with operations in US, Canada, Mexico & India. SAT is an Oracle Gold Partner, SAP Services Partner & IBM Certified enterprise.
+
+All SA Technologies requirements are Direct Client Requirements from IT Hiring Managers. We guarantee you the best rate for your skills and performance.
+
+Job Description
+
+Position: Front End Web Developer
+
+Location: Ottawa, Ontario Canada.
+
+Duration: 6 Months +
+
+Rate: Open
+
+Job Description for Front End Web Developer:
+
+The person we're looking for will:
+
+• Develop websites ensuring strong optimization and functionality
+
+• Monitor site technical performance
+
+• Work on projects including web layout enhancements, desktop applications, website enhancements, web-based applications, and database-driven websites
+
+• Develop web pages utilizing CSS3 and HTML5 and programming languages including JavaScript and PHP
+
+• Interact with servers using SSH
+
+• Work in a variety of development frameworks including: Wordpress, Drupal, ExpressionEngine, CodeIgniter.
+
+Skills we’d like to see:
+
+• Excellent understanding of major operating systems
+
+• Experience working in OS X
+
+• At least a 2 year degree/diploma in a computer-related field (computer science/programming)
+
+• Strong Knowledge of common programming languages including PHP and Python
+
+• In depth knowledge of JavaScript, CSS, HTML
+
+• Experience with Expression Engine / Wordpress / Drupal development and available add-ons and plug-ins
+
+• Excellent MySQL database knowledge
+
+We should work together if you have:
+
+• A desire to stay updated on current and new technologies
+
+• Strong time management and organizational skills
+
+• The ability to work individually or in a team to meet tight deadlines
+
+• Strong written and verbal communication skills, with attention to detail
+
+• A desire to be thorough and precise
+
+Additional Information
+
+All your information will be kept confidential according to EEO guidelines.|Experience Remote done Right.
+
+Over 20 years of remote experience, all 500+ staff are 100% remote and we still grow vibrant relationships, provide exceptional opportunities for career growth while working with stellar clients on ambitious projects
+
+What we're working on:
+
+Enterprise companies turn to us to help them launch innovative digital products that interact with hundreds of millions of customers, transactions and data points. The problems we solve every day are real and require creativity, grit and determination. We are building a culture that challenges norms while fostering experimentation and personal growth. In order to grasp the scale of problems we face, ideally, you have some exposure to Logistics, FinTech, Transportation, Insurance, Media or other complex multifactor industries
+
+Requirements
+• 7+ years of professional experience (A technical assessment will be required)
+• Senior-level experience of at least 4 years of experience with Javascript, NodeJS, Express, Mongo
+• Ability to create clean, modern, testable, well-documented code
+• Serverless experience with AWS lambda or Azure functions
+• Advanced English fluency, verbal and written
+• Professional, empathic, team player
+• Problem solver, proactive, go-getter
+
+Why Lumenalta is an amazing place to work at
+
+At Lumenalta, you can expect that you will:
+• Be 100% dedicated to one project at a time so that you can innovate and grow.
+• Be a part of a team of talented and friendly senior-level developers.
+• Work on projects that allow you to use leading tech.
+• The result? We produce meaningful outcomes for our clients that break barriers in their industries. The job is 100% remote; please ensure you have a comfortable office setup at your desired work location.
+
+Lumenalta is committed to hiring exceptional talent from a wide variety of diverse backgrounds. If you share our values and enthusiasm for digital transformation, we encourage you to apply.|Working Title
+
+Senior Firmware Developer
+
+Reports To
+
+Manager, Firmware Development
+
+Based In
+
+Ottawa, ON
+
+Term
+
+Full-time
+
+About Us
+
+If you seek a career that is both challenging and meaningful, consider joining the team at Nanometrics. What we do is meaningful because our world-class products are used to help scientists advance their understanding of various Earth Sciences, including: earthquakes, volcanos, tsunamis, glaciers and even the Earth’s core, just to name a few. In this role, you will also help us address the challenging technical issues that come with the territory. For example, our products may find themselves deployed in Antarctica, on a volcano in Iceland, or at the bottom of the Pacific Ocean. Just think about the challenges we need to solve on a daily basis: ultra low power consumption, remote/portable power sources, remote telemetry, extreme temperatures, all while maintaining mission critical readiness.
+
+So if you are looking for a challenging, meaningful career…please read on!
+
+About You
+
+You are a Senior Developer with a strong background in software design and architecture. You have excellent knowledge of C++, strong communication and time management skills.
+
+The Team
+
+Nanometrics is currently seeking a Senior Firmware Developer to join our team of smart and creative software developers to help build our next generation of scientific dataloggers and ground motion sensors. These cutting-edge instruments are essential for collecting, recording, and streaming seismic data and state-of-health information in challenging field environments, ranging from deserts and mountain tops to Antarctica and the bottom of the ocean. Our firmware development team solves complex design problems in both lower level and application level software aiming to achieve a very high level of reliability and robustness, along with introducing new and advanced capabilities while ensuring minimal power consumption. In our pursuit of excellence, we continuously evaluate the latest tools, languages, and frameworks available, and integrate the best solutions into our development projects. The problems we tackle often require innovative thinking that spans the boundaries between cloud, enterprise, and our instruments. If you possess a strong software development background, a passion for cutting-edge technology, and thrive in a collaborative environment where your contributions make a significant impact, we invite you to join our team.
+
+The Role
+• Develop both application level and lower level firmware for our seismic datalogger and sensor products.
+• Design solutions involving embedded systems and their integration with cloud applications.
+• Solve complex problems involving system integration, testability, manufacturability, reliability, performance and usability.
+• Provide concise and clear communication of proposed designs and changes to existing designs.
+• Find faults in and undertake performance analysis of application software, middleware, device drivers, OS/RTOS configurations, hardware platforms, physical interfaces, data captures, test methods, and manufacturing processes.
+• Contribute to project management by providing status summaries, estimating effort, and identifying risk.
+• Identify new technologies and suggest improvements to processes, affecting technical solutions, productivity, testability, and manufacturability.
+• Mentor intermediate and junior developers.
+
+What You Bring
+• Bachelor’s degree in Software Engineering, Computer Science, Electrical Engineering or equivalent
+• Minimum 4+ years of professional software development experience
+• Experience in embedded system development on embedded Linux and/or in an RTOS environment
+• Thorough understanding of IP networking protocols (TCP, UDP) and application protocols (e.g. Websocket), and experience implementing them for efficient data communication
+• Experience with essential software development tools including version control (Git preferred), task tracking (Jira preferred), automated test frameworks, deployment tools, and continuous integration
+• Knowledge of common I/O protocols such as SPI, I2C, RS232 and USB
+
+Assets
+• Familiarity with the Rust programming language
+• Experience with Yocto
+
+Why You’ll Love Us
+• You will be joining an amazing team of energetic and dedicated professionals in a dynamic, collaborative and progressive atmosphere
+• Competitive total compensation package including Benefits, RRSP, and Bonus opportunities
+• The chance to make positive and impactful contributions in your work
+• Nanometrics supports and encourages learning opportunities and provides access to LinkedIn Learning and several other Professional Development opportunities
+
+Nanometrics is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. Nanometrics is committed to meeting the accessibility needs of applicants throughout the recruitment and selection process. To make a request for accommodation or if you have questions about any particular requirements for one of our roles, please email hr@nanometrics.ca|Introduction
+
+As an entry level Application at , you’ll provide technical support and maintenance by applying knowledge of application functionality and related technical /interfaces with other systems/applications, responsible for running applications in a trouble-free manner, knowledge of integrated and test environments, tools, infrastructure and managed support services to support complex solutions. You will also be responsible for developing a strong understanding of the solutions and their capabilities to be able to , build, and test new capabilities into existing applications and systems.
+
+Your Role and Responsibilities
+
+A career in IBM Consulting is rooted by long-term relationships and close collaboration with clients across the globe.
+
+You’ll work with visionaries across multiple industries to improve the hybrid cloud and AI journey for the most innovative and valuable companies in the world. Your ability to accelerate impact and make meaningful change for your clients is enabled by our strategic partner ecosystem and our robust technology platforms across the IBM portfolio, including Software and Red Hat.
+
+Curiosity and a constant quest for knowledge serve as the foundation to success in IBM Consulting. In your role, you’ll be encouraged to challenge the norm, investigate ideas outside of your role, and come up with creative solutions resulting in groundbreaking impact for a wide network of clients. Our culture of evolution and empathy centers on long-term career growth and development opportunities in an environment that embraces your unique skills and experience.
+
+As an entry level Application Developer at IBM, you’ll provide technical support and maintenance by applying knowledge of application functionality and related technical design/interfaces with other systems/applications, responsible for running applications in a trouble-free manner, knowledge of integrated development and test environments, tools, infrastructure and managed support services to support complex solutions. You will also be responsible for developing a strong understanding of the solutions and their capabilities to be able to design, build, and test new capabilities into existing applications and systems. as you deliver a viable product.
+
+To be considered for this position you must be eligible to obtain Secret , NATO and Controlled Goods Clearances.
+
+Required Technical and Professional Expertise
+• Analyze and resolve issues in line with the technical requirements of the solution while adhering to the required Standards.
+• Understand technical business requirements and define technical solutions that align to the required Standards.
+• Apply the application / system development processes used by the team.
+• Develop the skills to understand interoperability standards and methods.
+• Collaborate with the team to deliver quality solutions.
+• Contribute to the development of technical designs and documentation.
+• Troubleshooting issues.
+• Develop the technical knowledge and experience to provide technical solutions.
+• Strong communication skills in both verbal and written
+• Clearly document solutions that can then be used to support the test team.
+
+Key Soft Skills
+• Analytical thinking
+• Creative thinking
+• Resilience, flexibility, and agility
+• Motivation and self-awareness
+• Curiosity and lifelong learning
+• Technological literacy
+• Dependability and attention to detail
+• Empathy and active listening
+• Leadership and social influence
+• Quality control
+
+To be considered for this position you must be eligible to obtain Secret , NATO and Controlled Goods Clearances.
+
+Preferred Technical And Professional Expertise
+• Negotiation skills and ability to work with a diverse set of stakeholders.
+• Participated in vendor solution evaluation processes.
+• Contributed to the evaluation of solutions developed by fellow team members or third parties.
+
+About Business Unit
+
+Consulting is ’s consulting and global professional services business, with market leading capabilities in business and technology transformation. With deep expertise in many industries, we offer strategy, experience, technology, and operations services to many of the most innovative and valuable companies in the world. Our people are focused on accelerating our clients’ businesses through the of collaboration. We believe in the of technology responsibly used to help people, partners and the planet.
+
+Your Life @ IBM
+
+In a world where technology never stands still, we understand that, dedication to our clients success, innovation that matters, and trust and personal responsibility in all our relationships, lives in what we do as IBMers as we strive to be the catalyst that makes the world work better.
+
+Being an IBMer means you’ll be able to learn and develop yourself and your career, you’ll be encouraged to be courageous and experiment everyday, all whilst having continuous trust and support in an environment where everyone can thrive whatever their personal or professional background.
+
+Our IBMers are growth minded, always staying curious, open to feedback and learning new information and skills to constantly transform themselves and our company. They are trusted to provide on-going feedback to help other IBMers grow, as well as collaborate with colleagues keeping in mind a team focused approach to include different perspectives to drive exceptional outcomes for our customers. The courage our IBMers have to make critical decisions everyday is essential to IBM becoming the catalyst for progress, always embracing challenges with resources they have to hand, a can-do attitude and always striving for an outcome focused approach within everything that they do.
+
+Are you ready to be an IBMer?
+
+About IBM
+
+IBM's greatest invention is the IBMer. We believe that through the application of intelligence, reason and science, we can improve business, society and the human condition, bringing the power of an open hybrid cloud and AI strategy to life for our clients and partners around the world.
+
+Restlessly reinventing since 1911, we are not only one of the largest corporate organizations in the world, we’re also one of the biggest technology and consulting employers, with many of the Fortune 50 companies relying on the IBM Cloud to run their business.
+
+At IBM, we pride ourselves on being an early adopter of artificial intelligence, quantum computing and blockchain. Now it’s time for you to join us on our journey to being a responsible technology innovator and a force for good in the world.
+
+Location Statement
+
+Must have the ability to work in Canada without sponsorship.
+
+This role will involve working with technology that is covered by Export Regulations sanctions. If you are a Foreign National from any of the following US sanctioned countries (Cuba, Iran, North Korea, Syria, and the Crimea, Luhansk, Donetsk, Kherson, and Zaporizhia regions of Ukraine) on a work permit, you are not eligible for employment in this position.
+
+Being You @ IBM
+
+is committed to creating a diverse environment and is proud to be an equal-opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, gender, gender identity or expression, sexual orientation, national origin, caste, genetics, pregnancy, disability, neurodivergence, age, veteran status, or other characteristics. is also committed to compliance with all fair employment practices regarding citizenship and immigration status.|Job Opportunity: Flutter Developer (L1, L2, L3)
+
+📍 Location: Onsite in Ottawa, Canada
+
+💰 Salary Range: $65,000 - $85,000 per year
+
+Are you a passionate Flutter Developer looking to create stunning, responsive, and high-performance applications? We’re hiring UI developers at various experience levels (L1, L2, L3) to join our client a global leader in physical and digital security
+
+What You’ll Be Doing:
+• Developing and deploying applications across web, mobile, and desktop platforms.
+• Utilizing Riverpod for efficient state management.
+• Writing and optimizing MongoDB queries to manage data effectively.
+• Collaborating with APIs using RESTful services to build scalable and reliable solutions.
+
+What We’re Looking For:
+• Proven experience in building applications with Flutter.
+• Strong knowledge of state management techniques, especially Riverpod.
+• Hands-on experience with MongoDB query syntax.
+• Proficiency in working with RESTful APIs.
+
+Why Join Them?
+• Competitive salary in the range of $70K-$80K based on experience and level.
+• Work onsite in the vibrant tech hub of Ottawa, Canada.
+• Opportunity to collaborate with a talented team and work on impactful projects.
+
+If you’re ready to take your experience to the next level and thrive in a fast-paced, collaborative environment, please attach your resume and I will be in touch to discuss!|Why we need you:
+
+We are growing again and we need more passionate, dedicated, and awesome people to join our team and help us make a difference.
+
+Your primary responsibilities:
+• Implement features on our React web portal to allow interaction with patient and organization data.
+• Participate in high-level requirements and design sprint sessions.
+• Collaborate with our incredible design and UX team to implement clean and simple user interfaces and delightful interactions.
+• Interface with our HIPAA-Compliant Amazon cloud environment through a REST API.
+• Assist to maintain the team’s continuous integration test suite.
+• Take pride in developing the right architecture and writing clean, maintainable, and high quality code.
+• Work in a fast-paced Agile environment where the features you build get into the hands of eager customers quickly.
+• Engage in other opportunities of interest as you keep learning.
+
+Qualifications:
+• 5+ years experience with web technologies.
+• Experience developing web applications in React.js.
+• Degree of study in Software Engineering, Computer Science, or related.
+• Strong understanding of architecture, design patterns, and web development.
+• Communication and collaboration skills when working with a team.
+
+Assets:
+• Familiarity with Redux.
+• Experience building multilingual applications.
+• Experience with modern JavaScript (ES2015+).
+• Ability to champion technical discussions and decisions.
+• Understanding of functional programming concepts.
+• UX and design experience.
+
+Who are we? We’re SHOEBOX Audiometry. We design and develop products that are creating a seismic shift in the way hearing healthcare is provided. Utilizing iOS and web technology to replace bulky, expensive equipment, we’re bringing hearing testing into the 21st century and making it more affordable and accessible than ever before.
+
+Why that’s important: 5% of the world’s population suffers from disabling hearing loss, 60% of childhood hearing loss is due to preventable causes, and the majority of people with disabling hearing loss live in low-middle income countries. We can help. With our products, hearing testing can be conducted outside of a sound booth and without the need for clunky equipment (you just need a calibrated headset and an iPad), which allows for testing almost anywhere, anytime, worldwide.
+
+At SHOEBOX, your contribution will have a meaningful impact every single day. On top of that, you’ll be an integral part of an innovative team, working with the latest tools and technologies, pushing the boundaries of what medical device software can do, and collaborating with other developers, product managers, and salespeople who are super passionate about their crafts.
+
+In joining us, you’re joining a dedicated and passionate team that works hard and cares deeply about the change we’re making in the world. We also take time to celebrate our successes, enjoy lunchtimes together, and genuinely like and care about one another.
+
+To learn more about us and what we stand for, check out our
+
+We offer competitive salaries and benefits, real work-life balance, and a discretionary wellness benefit. SHOEBOX will provide you with a MacBook Pro with memory to spare and a 4K monitor.
